@@ -1,9 +1,7 @@
-// "  sass --watch assets/sass/index.scss assets/styles/style.css  "
-// команда для быстрой вставки в терминал - запускает компиляцию  кода SASS в CSS, терминал должен оставаться открытым
-
 @import "normalize";
 @import "fonts";
 @import "vars";
 @import "templates";
 
 @import "components/header"; //по аналогии импортируем свой раздел
+@import "components/section-order";

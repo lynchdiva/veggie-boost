@@ -1,3 +1,5 @@
+// ============Общие стили===========//
+
 * {
   box-sizing: border-box;
 }
@@ -15,4 +17,21 @@ body {
   font-style: normal;
   font-weight: 400;
   color: $dark;
+}
+
+// ============Конец общие стили===========//
+
+//Шаблон для ограничения контента, добавлять к стилям командой @extend %container;
+%container {
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 1.5%;
+}
+
+//Миксин для логотипа, @include logotip(цвет);
+@mixin logotip($fill) {
+  fill: $fill;
+  width: 16px;
+  height: 16px;
 }
