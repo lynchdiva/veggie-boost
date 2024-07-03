@@ -19,6 +19,31 @@ body {
   color: $dark;
 }
 
+.page-title {
+  font-size: 6.4em;
+  font-weight: 500;
+  line-height: 75px;
+  letter-spacing: -2.56px;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 4.8em;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: -1.92px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 4em;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -1.6px;
+  text-transform: uppercase;
+}
+
 // ============Конец общие стили===========//
 
 //Шаблон для ограничения контента, добавлять к стилям командой @extend %container;
@@ -30,8 +55,8 @@ body {
 }
 
 //Миксин для логотипа, @include logotip(цвет);
-@mixin logotip($fill) {
-  fill: $fill;
+@mixin logotip($color) {
+  fill: $color;
   width: 16px;
   height: 16px;
 }
