@@ -21,6 +21,13 @@ body {
   color: $dark;
 }
 
+a {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+}
+
 //==================Заголовки====================//
 .page-title {
   font-size: 6.4em;
@@ -59,8 +66,6 @@ body {
   list-style: none;
 
   .nav-items__link {
-    @extend %link;
-
     font-size: 1.4em;
   }
 }
@@ -103,12 +108,4 @@ body {
   @media screen and (max-width: 767px) {
     padding: 0 20px;
   }
-}
-
-//Шаблон для сброса стандартных стилей ссылок
-%link {
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: none;
-  color: inherit;
 }

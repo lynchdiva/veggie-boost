@@ -9,6 +9,10 @@
   .header__left-element {
     flex-shrink: 0;
 
+    @media screen and (max-width: 680px) {
+      display: none;
+    }
+
     .nav-items_tablet {
       @media screen and (max-width: 768px) {
         width: 229px;
@@ -32,6 +36,10 @@
       @media screen and (max-width: 768px) {
         width: 229px;
       }
+
+      @media screen and (max-width: 680px) {
+        display: none;
+      }
     }
 
     .header__shopping-cart-link {
@@ -41,6 +49,120 @@
     .header__shopping-cart-icon {
       width: 24px;
       height: 24px;
+    }
+  }
+
+  .hamburger-menu {
+    @media screen and (min-width: 681px) {
+      display: none;
+    }
+
+    #hamburger-menu__toogle {
+      opacity: 0;
+    }
+
+    #hamburger-menu__toogle:checked ~ .hamburger-menu__btn {
+      span {
+        transform: rotate(45deg);
+      }
+    }
+
+    #hamburger-menu__toogle:checked ~ .hamburger-menu__btn {
+      span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+    }
+
+    #hamburger-menu__toogle:checked ~ .hamburger-menu__btn {
+      span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+    }
+
+    #hamburger-menu__toogle:checked ~ .hamburger-menu__box {
+      visibility: visible;
+      left: 0;
+    }
+
+    .hamburger-menu__btn {
+      background-color: red;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+
+      width: 26px;
+      height: 26px;
+
+      cursor: pointer;
+      z-index: 1;
+
+      span,
+      span::before,
+      span::after {
+        display: block;
+        position: absolute;
+
+        width: 100%;
+        height: 2px;
+
+        background-color: #616161;
+
+        transition-duration: 0.25s;
+      }
+
+      span::before {
+        content: "";
+        top: -8px;
+      }
+
+      span::after {
+        content: "";
+        top: 8px;
+      }
+    }
+  }
+
+  .hamburger-menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+
+    width: 300px;
+    height: 100%;
+
+    margin: 0;
+    padding: 80px 0;
+
+    list-style: none;
+
+    background-color: #eceff1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+
+    transition-duration: 0.25s;
+
+    .hamburger-menu__item {
+      display: block;
+      padding: 12px 24px;
+
+      color: #333;
+
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+
+      text-decoration: none;
+
+      transition-duration: 0.25s;
+    }
+
+    .hamburger-menu__item:hover {
+      background-color: #cfd8dc;
     }
   }
 }
