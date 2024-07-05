@@ -11,19 +11,34 @@
     <!-- ХЕДЕР Зина -->
     <header class="header">
       <nav>
-        <ul>
-          <li><a href="#">How It Works</a></li>
-          <li><a href="#">Vegetables</a></li>
-          <li><a href="#">Contacts</a></li>
+        <ul class="nav-items">
+          <li class="nav-items__item">
+            <a class="nav-items__link" href="#">How It Works</a>
+          </li>
+          <li class="nav-items__item">
+            <a class="nav-items__link" href="#">Vegetables</a>
+          </li>
+          <li class="nav-items__item">
+            <a class="nav-items__link" href="#">Contacts</a>
+          </li>
         </ul>
       </nav>
-    </header>
 
-    <div class="logo">
-      <svg class="icon">
-        <use xlink:href="assets/icons/sprite.svg#logo"></use>
-      </svg>
-    </div>
+      <div class="logo">
+        <svg class="logo__icon logo__icon_green">
+          <use xlink:href="assets/icons/sprite.svg#logo"></use>
+        </svg>
+        veggieboost
+      </div>
+
+      <div class="header__shopping-cart">
+        <a class="header__shopping-cart-link" href="#">
+          <svg class="header__shopping-cart-icon">
+            <use xlink:href="assets/icons/sprite.svg#shopping-cart"></use>
+          </svg>
+        </a>
+      </div>
+    </header>
     <!-- КОНЕЦ ХЕДЕР Зина -->
 
     <main>
@@ -33,17 +48,17 @@
         <div class="section-hero__box-reviews">
           <img
             class="section-hero__img-reviews"
-            src="./assets/images/section-hero_user1.svg"
+            src="./assets/icons/section-hero_user1.svg"
             alt=""
           />
           <img
             class="section-hero__img-reviews"
-            src="./assets/images/section-hero_user2.svg"
+            src="./assets/icons/section-hero_user2.svg"
             alt=""
           />
           <img
             class="section-hero__img-reviews"
-            src="./assets/images/section-hero_user3.svg"
+            src="./assets/icons/section-hero_user3.svg"
             alt=""
           />
           <div class="section-hero__circle-reviews">

@@ -55,10 +55,3 @@ body {
   margin: 0 auto;
   padding: 0 1.5%;
 }
-
-//Миксин для логотипа, @include logotip(цвет);
-@mixin logotip($color) {
-  fill: $color;
-  width: 16px;
-  height: 16px;
-}
