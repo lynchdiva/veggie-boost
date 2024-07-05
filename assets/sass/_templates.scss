@@ -1,4 +1,4 @@
-// ============Общие стили===========//
+// ================ОБЩИЕ СТИЛИ=================//
 
 * {
   margin: 0;
@@ -21,6 +21,7 @@ body {
   color: $dark;
 }
 
+//==================Заголовки====================//
 .page-title {
   font-size: 6.4em;
   font-weight: 500;
@@ -45,13 +46,69 @@ body {
   letter-spacing: -1.6px;
   text-transform: uppercase;
 }
+//================Конец Заголовки==================//
 
-// ============Конец общие стили===========//
+//===================Навигация=====================//
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  height: 18px;
+
+  list-style: none;
+
+  .nav-items__link {
+    @extend %link;
+
+    font-size: 1.4em;
+  }
+}
+//===============Конец Навигация==================//
+
+//====================Логотип=====================//
+.logo {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  width: 118px;
+  height: 18px;
+
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  font-size: 1.4em;
+  text-transform: uppercase;
+
+  .logo__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .logo__icon_green {
+    fill: $green;
+  }
+}
+//==================Конец Логотип==================//
+
+//================КОНЕЦ ОБЩИЕ СТИЛИ================//
 
 //Шаблон для ограничения контента, добавлять к стилям командой @extend %container;
 %container {
   max-width: 1280px;
   min-width: 320px;
   margin: 0 auto;
-  padding: 0 1.5%;
+  padding: 0 32px;
+
+  @media screen and (max-width: 767px) {
+    padding: 0 20px;
+  }
+}
+
+//Шаблон для сброса стандартных стилей ссылок
+%link {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
 }
