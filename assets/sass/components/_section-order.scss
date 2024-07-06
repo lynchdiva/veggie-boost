@@ -1,32 +1,67 @@
 .section-order {
   @extend %container;
 
-  .section-order__container{
+  .section-order__container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
   }
 
-  .section-order__content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px
+  .section-order__content {
+    width: 687px;
   }
 
   .section-order__title {
-    
+    margin-bottom: 40px;
   }
 
-  .section-order__content desc{
+  .section-order__desc {
     display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+  }
 
+  .section-order__column {
+    width: 345px;
+    font-size: 1.8em;
   }
 
   .section-order__img {
     width: 410px;
     height: 170px;
   }
+}
 
+.wrapper {
+  @extend %container;
 
+  .wrapper__ribbon.wrapper__ribbon_back {
+    position: absolute;
+    top:inherit;
+    width: 1323px;
+    height: 100px;
+    background-color: $orange;
+    text-align: center;
+    transform: rotate(3deg);
+
+    p {
+      font-size: 4em;
+      color: $grey; 
+    }
+  }
+
+  .wrapper__ribbon {
+    position: absolute;
+    top:inherit;
+    width: 1323px;
+    height: 100px;
+    background-color: $green;
+    text-align: center;
+    transform: rotate(-2deg);
+
+    p {
+      font-size: 4em;
+      color: $grey;
+    }
+    
+  }
 }
