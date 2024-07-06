@@ -156,9 +156,16 @@
       <!-- СЕКЦИЯ Дарка -->
       <!-- margin или padding заголовка пиши в классе section-contact__title, добавь этот класс в свой компонент-->
       <section class="section-contact">
+        
+        <div class="feedback">
         <h2 class="title section-contact__title">Fresh Harvest Box has got you covered</h2>
         <p>Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer</p>
         <input type="tel" name="phone" id="phone" placeholder="+ 380 ()" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+        </div>
+
+        <img class="section-contact-image" 
+        src="./assets/images/section-contact-image.svg" 
+        alt="section-contact_image">
       </section>
       <!-- КОНЕЦ СЕКЦИЯ Дарка -->
     </main>
@@ -166,7 +173,17 @@
     <!-- ФУТЕР Дарка -->
     <footer class="footer">
       <!-- для блока с иконками соц.сетей, адреса и телефона лучше использовать семантический тег address-->
-      <div class="footer__left-element">
+        <div class="footer__left-element">
+          <img src="./assets/images/footer-img-vegetables.svg" alt="broccoli">
+          <div class="logo">
+            <svg class="logo__icon logo__icon_black">
+              <use xlink:href="assets/icons/sprite.svg#logo"></use>
+            </svg>
+            veggieboost
+          </div>
+        </div>
+
+      <div class="footer__menu">
         <nav>
           <ul class="nav-items nav-items_tablet">
             <li><a class="nav-items__link" href="#">How It Works</a></li>
@@ -176,8 +193,11 @@
         </nav>
       </div>
 
-      <div>
+      <div class="footer__right-element">
         <address>
+          <img src="./assets/images/footer-social-media-icon1.svg" alt="facebook">
+          <img src="./assets/images/footer-social-media-icon2.svg" alt="instagram">
+          <img src="./assets/images/footer-social-media-icon3.svg" alt="youtube">
           <p>+380 (68) 443-94-26</p>
           <p>1678 S. Pioneer Road <br>
             Salt Lake City <br>
