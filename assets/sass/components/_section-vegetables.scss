@@ -1,0 +1,141 @@
+p {
+    margin: 0;
+}
+.section-vegetables {
+    display: flex;
+    flex-direction: column;
+    margin: 124px 0 124px 0;
+}
+.section-vegetables__subtitle {
+    align-self: center;
+    margin: 0 0 14px;
+}
+.section-vegetables__text {
+    align-self: center;
+    max-width: 562px;
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 1.8em;
+    line-height: 24px;
+    text-align: center;
+}
+.section-vegetables__cards {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(335px,1fr));
+    gap:24px;
+    margin-bottom: 44px;
+}
+.card-vegetables {
+    display: flex;
+    flex-direction: column;
+    height: 465px;
+    padding: 64px 24px 24px;
+    border-radius: 20px;
+    background-color: $light-green;
+}
+.card-vegetables:hover {
+    transform:scale(1.1);
+    box-shadow: 0px 2px 13px 2px rgba(20, 20, 20, 0.2);   
+    transition-duration: 0.25s;
+}
+.card-vegetables__title {
+    margin-bottom: 8px;
+    font-size:3.2em;
+    font-weight: 700;
+    line-height: 38px;
+}
+.card-vegetables__species {
+    font-size: 1.8em;
+    line-height: 24px;
+}
+.card-vegetables__img_area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+.card-vegetables__img_carrot {
+    max-width: 321px;
+    width: 100%;
+}
+.card-vegetables__img_sprouts {
+    max-width: 266px;
+    width: 100%;
+}
+.card-vegetables__img_tomato {
+    max-width: 297px;
+    width: 100%;
+}
+.card-vegetables__img_eggplant {
+    max-width: 222px;
+    width: 100%;
+    transform: scaleX(-1);
+}
+.card-vegetables__img_potatoes {
+    max-width: 339px;
+    width: 100%;
+}
+.card-vegetables__img_leek {
+    max-width: 308px;
+    width: 100%;
+}
+.card-vegetables__img_mushrooms {
+    max-width: 353px;
+    width: 100%;
+}
+.card-vegetables__img_corn {
+    max-width: 286px;
+    width: 100%;
+}
+.card-vegetables__img_radish {
+    max-width: 316px;
+    width: 100%;
+}
+.card-vegetables__shadow {
+    position: absolute;
+    top: 223px;
+    width: 195px;
+    height: 38px;
+    background-color: #141414;
+    opacity: 10%;
+    border-radius: 100%;
+    filter: blur(10px);
+}
+.card-vegetables__weight {
+    font-size: 1.8em;
+    font-weight: 500;
+    line-height: 24px;
+}
+.section-vegetables__button {
+    display:flex;
+    align-self:center;
+    align-items:center;
+    justify-content:center;
+    max-width:114px;
+    width:100%;
+    height:114px;
+    padding:0;
+    gap:4px;
+    border-radius:100%;
+    border:none;
+    background-color: $orange;
+    rotate: 346deg;
+}
+.section-vegetables__button:hover {
+background-color:$green;
+box-shadow: 0px 0px 13px 2px rgba(26, 26, 26, 0.2) inset;
+transform: scale(1.2);
+transition-duration: 0.25s;
+}
+.section-vegetables__button_img {
+width:14px;
+height: 14px;
+}
+.section-vegetables__button_name {
+color:#FFFFFF;
+font-size:1.8em;
+font-weight:500;
+line-height:24px;
+text-align:center;
+}
