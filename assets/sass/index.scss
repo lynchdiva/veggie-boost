@@ -4,7 +4,9 @@
 @import "templates";
 
 @import "components/header"; //по аналогии импортируем свой раздел
+@import "components/main";
 @import "components/section-order";
 @import "components/section-steps";
 @import "components/section-contact";
 @import "components/footer";
+@import "components/section-vegetables"
