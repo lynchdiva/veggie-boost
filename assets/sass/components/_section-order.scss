@@ -43,6 +43,7 @@
     background-color: $orange;
     text-align: center;
     transform: rotate(2deg);
+    position: absolute;
 
     p {
       font-size: 4em;
@@ -56,6 +57,7 @@
     background-color: $green;
     text-align: center;
     transform: rotate(-3deg);
+    position: absolute;
 
     p {
       font-size: 4em;
