@@ -30,12 +30,22 @@ a {
 
 //==================Заголовки====================//
 .page-title {
+  margin: auto;
+  margin-top: 16px;
   font-size: 6.4em;
   font-weight: 500;
   line-height: 75px;
   letter-spacing: -2.56px;
   color: $white;
   text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: 5.4em;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 4em;
+  }
 }
 
 .title {
@@ -44,6 +54,14 @@ a {
   line-height: 50px;
   letter-spacing: -1.92px;
   text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: 4em;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 2.4em;
+  }
 }
 
 .subtitle {
@@ -52,6 +70,14 @@ a {
   line-height: 44px;
   letter-spacing: -1.6px;
   text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2.8em;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 2.4em;
+  }
 }
 //================Конец Заголовки==================//
 
