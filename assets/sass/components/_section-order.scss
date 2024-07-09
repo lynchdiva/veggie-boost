@@ -1,3 +1,7 @@
+* {
+  outline: deeppink 1px solid;
+}
+
 .section-order {
   @extend %container;
   margin-top: 124px;
@@ -47,11 +51,33 @@
     transform: rotate(2deg);
     position: relative;
     top: 0px;
-    left: 0px;
+    left: -14px;
 
     p {
       font-size: 4em;
       color: $grey;
+      white-space: nowrap;
+      overflow: hidden;
+
+      @media (max-width: 768px) {
+        font-size: 2.8em;
+      }
+    }
+
+    @media (max-width: 1357px) {
+      width: 100%;
+      height: auto;
+    }
+    
+    @media (max-width: 768px) {
+      width: 769px;
+      height: 64px;
+      line-height: 64px;
+    }
+
+    @media (max-width: 490px) {
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -63,14 +89,28 @@
     transform: rotate(-3deg);
     position: absolute;
     top: 70px;
-    left: 34px;
+    left: 20px;
 
     p {
       font-size: 4em;
       color: $grey;
       white-space: nowrap;
       overflow: hidden;
+
+      @media (max-width: 768px) {
+        font-size: 2.8em;
+      }
     }
-    
+
+    @media (max-width: 1368px) {
+      width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      width: 769px;
+      height: 64px;
+      line-height: 64px;
+    }
   }
 }
