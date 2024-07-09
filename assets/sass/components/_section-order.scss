@@ -1,6 +1,6 @@
 .section-order {
   @extend %container;
-  margin-top: 62px;
+  margin-top: 124px;
 
   .section-order__container {
     display: flex;
@@ -33,6 +33,8 @@
 }
 
 .wrapper {
+  @extend %container;
+
   position: relative;
   right: 55px;
   margin-top: 124px;
@@ -41,9 +43,11 @@
     width: 1323px;
     height: 100px;
     background-color: $orange;
-    text-align: center;
+    line-height: 100px;
     transform: rotate(2deg);
-    position: absolute;
+    position: relative;
+    top: 0px;
+    left: 0px;
 
     p {
       font-size: 4em;
@@ -52,16 +56,20 @@
   }
 
   .wrapper__ribbon {
-    width: 1323px;
+    width: 1326px;
     height: 100px;
     background-color: $green;
-    text-align: center;
+    line-height: 100px;
     transform: rotate(-3deg);
     position: absolute;
+    top: 70px;
+    left: 34px;
 
     p {
       font-size: 4em;
       color: $grey;
+      white-space: nowrap;
+      overflow: hidden;
     }
     
   }
