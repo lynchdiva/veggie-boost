@@ -41,10 +41,12 @@ a {
 
   @media screen and (max-width: 768px) {
     font-size: 5.4em;
+    line-height: 64px;
   }
 
   @media screen and (max-width: 375px) {
     font-size: 4em;
+    line-height: 44px;
   }
 }
 
@@ -57,10 +59,12 @@ a {
 
   @media screen and (max-width: 768px) {
     font-size: 4em;
+    line-height: 44px;
   }
 
   @media screen and (max-width: 375px) {
     font-size: 2.4em;
+    line-height: 28px;
   }
 }
 
@@ -73,10 +77,12 @@ a {
 
   @media screen and (max-width: 768px) {
     font-size: 2.8em;
+    line-height: 32px;
   }
 
   @media screen and (max-width: 375px) {
     font-size: 2.4em;
+    line-height: 28px;
   }
 }
 //================Конец Заголовки==================//
