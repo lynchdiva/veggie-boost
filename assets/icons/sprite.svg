@@ -16,5 +16,18 @@
     <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" fill="#141414" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
     <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#141414" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
+ 
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="shopping-cart-white">
+    <g clip-path="url(#clip0_251_71)">
+      <path d="M7.50008 18.3333C7.96032 18.3333 8.33341 17.9602 8.33341 17.5C8.33341 17.0397 7.96032 16.6666 7.50008 16.6666C7.03984 16.6666 6.66675 17.0397 6.66675 17.5C6.66675 17.9602 7.03984 18.3333 7.50008 18.3333Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M16.6666 18.3333C17.1268 18.3333 17.4999 17.9602 17.4999 17.5C17.4999 17.0397 17.1268 16.6666 16.6666 16.6666C16.2063 16.6666 15.8333 17.0397 15.8333 17.5C15.8333 17.9602 16.2063 18.3333 16.6666 18.3333Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M0.833252 0.833374H4.16659L6.39992 11.9917C6.47612 12.3754 6.68484 12.72 6.98954 12.9653C7.29424 13.2106 7.6755 13.3409 8.06659 13.3334H16.1666C16.5577 13.3409 16.9389 13.2106 17.2436 12.9653C17.5483 12.72 17.757 12.3754 17.8333 11.9917L19.1666 5.00004H4.99992" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+    <defs>
+      <clipPath id="clip0_251_71">
+        <rect width="20" height="20" fill="white"></rect>
+      </clipPath>
+    </defs>
+  </symbol>
 
 </svg>
