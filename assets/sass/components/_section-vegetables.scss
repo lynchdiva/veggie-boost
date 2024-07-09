@@ -139,3 +139,26 @@ font-weight:500;
 line-height:24px;
 text-align:center;
 }
+@media screen and (max-width: 380px) {
+    .card-vegetables {
+        height: 443px;
+        padding: 40px 20px 20px 20px;
+    }
+    .card-vegetables__img_tomato,
+    .card-vegetables__img_potatoes,
+    .card-vegetables__img_leek {
+        padding-top: 20px;
+    }
+    .card-vegetables__img_mushrooms,
+    .card-vegetables__img_radish {
+        padding-top: 40px;
+    }
+    .section-vegetables__button {
+        width: 80px;
+        height: 80px;
+    }
+    .section-vegetables__button_name {
+        font-size: 1.4em;
+        line-height: 18px;
+    }
+}
