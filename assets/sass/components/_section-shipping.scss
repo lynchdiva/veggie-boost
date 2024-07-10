@@ -7,7 +7,7 @@
     margin-bottom: 124px;
     gap: 40px;
     border-radius: 80px;
-    background-image: url(/assets/images/section-shipping__img_background.png);
+    background-image: url(../images/section-shipping__img_background.png);
     background-color: #FAF3E7;
 }
 .section-shipping__img {
@@ -29,24 +29,28 @@
     .section-shipping {
         justify-content: center;
         flex-wrap: wrap;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
     .section-shipping__subtitle {
         max-width: 578px;
         text-align: center;
     }
-}    
-@media screen and (max-width: 1070px) {
+}  
+@media screen and (max-width: 768px) {
     .section-shipping {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    .section-shipping__subtitle {
-        max-width: 544px;
+        margin-bottom: 100px;
     }
 }
 
 @media screen and (max-width: 500px) {
     .section-shipping {
         padding: 80px 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .section-shipping {
+        margin-bottom: 80px;
     }
 }
