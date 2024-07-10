@@ -41,7 +41,8 @@
     font-weight: 700;
     line-height: 38px;
 }
-.card-vegetables__species {
+.card-vegetables__species,
+.card-vegetables__weight {
     font-size: 1.8em;
     line-height: 24px;
 }
@@ -91,7 +92,7 @@
 }
 .card-vegetables__shadow {
     position: absolute;
-    top: 223px;
+    top: 215px;
     width: 195px;
     height: 38px;
     background-color: #141414;
@@ -100,9 +101,7 @@
     filter: blur(10px);
 }
 .card-vegetables__weight {
-    font-size: 1.8em;
     font-weight: 500;
-    line-height: 24px;
 }
 .section-vegetables__button {
     display:flex;
@@ -140,20 +139,30 @@ text-align:center;
     .section-vegetables {
         margin-bottom: 100px;
     }
+    .card-vegetables__title {
+        font-size:2.8em;
+        line-height: 32px;
+    }
+    .card-vegetables__shadow {
+        top: 221px;
+    }
 }
 @media screen and (max-width: 380px) {
     .card-vegetables {
         height: 443px;
         padding: 40px 20px 20px 20px;
     }
-    .card-vegetables__img_tomato,
-    .card-vegetables__img_potatoes,
-    .card-vegetables__img_leek {
+    .card-vegetables__img_carrot {
         padding-top: 20px;
     }
-    .card-vegetables__img_mushrooms,
-    .card-vegetables__img_radish {
+    .card-vegetables__img_tomato,
+    .card-vegetables__img_potatoes,
+    .card-vegetables__img_leek,
+    .card-vegetables__img_radish  {
         padding-top: 40px;
+    }
+    .card-vegetables__img_mushrooms{
+        padding-top: 60px;
     }
     .section-vegetables__button {
         width: 80px;
@@ -167,5 +176,18 @@ text-align:center;
 @media screen and (max-width: 375px) {
     .section-vegetables {
         margin-bottom: 80px;
+    }
+    .card-vegetables__title {
+        font-size:2.4em;
+        line-height: 28px;
+    }
+    .section-vegetables__text,
+    .card-vegetables__species,
+    .card-vegetables__weight {
+        font-size: 1.4em;
+        line-height: 18px;
+    }
+    .card-vegetables__shadow {
+        top: 247px;
     }
 }
