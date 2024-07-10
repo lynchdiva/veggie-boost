@@ -1,10 +1,10 @@
-// * {
-//   outline: deeppink 1px solid;
-// }
+ * {
+  outline: deeppink 1px solid;
+}
 
 .section-order {
-  @extend %container;
   margin-top: 124px;
+  @extend %container;
 
   .section-order__container {
     display: flex;
@@ -25,20 +25,12 @@
     }
   }
 
-  .section-order__content {
-    max-width: 687px;
-    width: 100%;
-
-    @media screen and (max-width: 532px) {
-    }
-  }
-
   .section-order__title {
     margin-bottom: 40px;
+    max-width: 614px;
+    width: 100%;
 
-    @media screen and (max-width: 810px) {
-      font-size: 4em;
-    }
+    // font-size: clamp(28px, 4.8em, 100px);
 
     @media screen and (max-width: 768px) {
       max-width: 386px;
@@ -58,6 +50,8 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 40px;
+    max-width: 687px;
+    width: 91%;
 
     @media screen and (max-width: 1146px) {
       position: absolute;
@@ -84,20 +78,8 @@
     max-width: 353px;
     width: 100%;
     font-size: 1.8em;
-
-    
-    @media screen and (max-width: 1146px) {
-      width: 100%;
-    }
-
-    @media screen and (max-width: 810px) {
-      width: 40%;
-    }
-
-    @media screen and (max-width: 768px) {
-      max-width: 317px;
-      width: 100%;
-    }
+    line-height: 24px;
+    letter-spacing: -0.72px;
 
     @media screen and (max-width: 532px) {
       max-width: 480px;
@@ -136,86 +118,73 @@
       top: 50px;
     }
 }
+  .wrapper {
+    @extend %container;
 
-.wrapper {
-  @extend %container;
-
-  position: relative;
-  right: 55px;
-  margin-top: 124px;
-
-  .wrapper__ribbon.wrapper__ribbon_back {
-    max-width: 1323px;
-    width: 100%;
-    height: 100px;
-    background-color: $orange;
-    line-height: 100px;
-    transform: rotate(2deg);
     position: relative;
-    top: 0px;
-    left: -14px;
+    margin-top: 124px;
     overflow: hidden;
+    width: 100%;
+    height: 223px;
 
-    p {
-      font-size: 4em;
-      color: $grey;
-      white-space: nowrap;
-
-      @media screen and (max-width: 768px) {
-        font-size: 2.8em;
-      }
+    @media screen and (max-width: 768px){
+      height: 152px;
     }
 
-    @media (max-width: 1357px) {
-      width: 100%;
-      height: auto;
+    @media screen and (max-width: 375px){
+      height: 139px;
+    }
+
+    .wrapper__ribbon.wrapper__ribbon_back {
+      background-color: $orange;
+      line-height: 100px;
+      transform: rotate(2deg);
+      position: absolute;
+      top: 35px;
+      left: -56px;
+
+      @media screen and (max-width: 768px){
+        line-height: 64px;
+        max-width: 797px;
+      }
+  
+      @media screen and (max-width: 375px){
+        line-height: 53px;
+        max-width: 400px;
+      }
+
+      p {
+        font-size: 4em;
+        color: $grey;
+        white-space: nowrap;
+      }
+
+      @media screen and (max-width: 768px){
+        font-size: 2.8em;
+      }
+  
+      @media screen and (max-width: 375px){
+        font-size: 2.4em;
+      }
     }
     
-    @media (max-width: 768px) {
-      width: 769px;
-      height: 64px;
-      line-height: 64px;
-    }
+    .wrapper__ribbon {
+      background-color: $green;
+      line-height: 100px;
+      transform: rotate(-3deg);
+      position: absolute;
+      top: 66px;
+      left: -58px;
 
-    @media (max-width: 490px) {
-      width: 100%;
-      height: auto;
-    }
-  }
+      p {
+        font-size: 4em;
+        color: $grey;
+        white-space: nowrap;
+      }
 
-  .wrapper__ribbon {
-    max-width: 1326px;
-    width: 100%;
-    height: 100px;
-    background-color: $green;
-    line-height: 100px;
-    transform: rotate(-3deg);
-    position: absolute;
-    top: 70px;
-    left: 20px;
-    overflow: hidden;
-
-    @media (max-width: 1368px) {
-      width: 100%;
-      height: auto;
-    }
-
-    @media (max-width: 768px) {
-      width: 769px;
-      height: 64px;
-      line-height: 64px;
-    }
-
-    p {
-      font-size: 4em;
-      color: $grey;
-      white-space: nowrap;
-
-      @media (max-width: 768px) {
-        font-size: 2.8em;
+      @media screen and (max-width: 672px){
+        
       }
     }
-
   }
-}
 }
