@@ -1,4 +1,8 @@
 .section-hero {
+    background-color: $green;
+}
+
+.section-hero__container {
     @extend %container;
 
     display: grid;
@@ -6,21 +10,34 @@
     grid-template-rows: repeat(5, minmax(min-content, max-content));
 
     padding-top: 134px;
+    padding-bottom: 32px;
 
-    background-color: $green;
+    @media screen and (max-width: 883px) {
+        display: flex;
+        flex-direction: column;
+        padding-top: 66px;
+    }
 }
+
 
 .section-hero__box-reviews {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     position: relative;
     height: 70px;
-    // margin-top: 134px;
+
+    @media screen and (max-width: 768px) {
+        height: 54px;
+    }
 }
 
 .section-hero__img-reviews {
     border: 2px solid $white;
     border-radius: 50%;
+
+    @media screen and (max-width: 768px) {
+        height: 54px;
+    }
 }
 
 .section-hero__img-reviews_position-1 {
@@ -30,11 +47,19 @@
     position: absolute;
     z-index: 1;
     left: 44px;
+
+    @media screen and (max-width: 768px) {
+        left: 34px;
+    }
 }
 .section-hero__img-reviews_position-3 {
     position: absolute;
     z-index: 2;
     left: 89px;
+
+    @media screen and (max-width: 768px) {
+        left: 69px;
+    }
 }
 
 .section-hero__circle-reviews {
@@ -49,12 +74,33 @@
     border-radius: 50%;
     background: $white;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+        width: 54px;
+        height: 54px;
+        left: 104px;
+    }
 }
 
 .section-hero__span-reviews_cap {
+    font-size: 2.4em;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -4%;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.8em;
+        line-height: 20px;
+    }
 }
 
 .section-hero__span-reviews_lowercase {
+    font-size: 1.2em;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1em;
+    }
 }
 
 .section-hero__title {
@@ -96,12 +142,27 @@
         background-color: $light-green;
         color: $green;
     }
+
+
+    @media screen and (max-width: 768px) {
+        width: 114px;
+        height: 114px;
+    }
 }
 
 .section-hero__image {
     grid-row: 1 / 5;
     grid-column: 2 / 3;
     height: 429px;
+
+    @media screen and (max-width: 916px) {
+        height: 393px;
+    }
+
+    @media screen and (max-width: 883px) {
+        align-self: center;
+        width: 488px;
+    }
 }
 
 .section-hero__box-hashtag {
@@ -109,6 +170,7 @@
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: repeat(2, minmax(min-content, max-content));
+    justify-content: end;
     gap: 8px;
 }
 
@@ -127,5 +189,9 @@
     &:hover {
         background-color: $white;
         color: $dark;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 10px 20px 10px 20px;
     }
 }
