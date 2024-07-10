@@ -1,7 +1,7 @@
 .section-vegetables {
     display: flex;
     flex-direction: column;
-    margin: 124px 0 124px 0;
+    margin-bottom: 124px;
 }
 .section-vegetables__subtitle {
     align-self: center;
@@ -18,7 +18,7 @@
 }
 .section-vegetables__cards {
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(335px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
     gap:24px;
     margin-bottom: 44px;
 }
@@ -31,7 +31,7 @@
     background-color: $light-green;
 }
 .card-vegetables:hover {
-    transform:scale(1.1);
+    transform:scale(1.02);
     box-shadow: 0px 2px 13px 2px rgba(20, 20, 20, 0.2);   
     transition-duration: 0.25s;
 }
@@ -136,6 +136,11 @@ font-weight:500;
 line-height:24px;
 text-align:center;
 }
+@media screen and (max-width: 768px) {
+    .section-vegetables {
+        margin-bottom: 100px;
+    }
+}
 @media screen and (max-width: 380px) {
     .card-vegetables {
         height: 443px;
@@ -157,5 +162,10 @@ text-align:center;
     .section-vegetables__button_name {
         font-size: 1.4em;
         line-height: 18px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .section-vegetables {
+        margin-bottom: 80px;
     }
 }
