@@ -18,7 +18,7 @@
 }
 .section-vegetables__cards {
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(335px,1fr));
     gap:24px;
     margin-bottom: 44px;
 }
@@ -176,6 +176,9 @@ text-align:center;
 @media screen and (max-width: 375px) {
     .section-vegetables {
         margin-bottom: 80px;
+    }
+    .section-vegetables__cards {
+        grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
     }
     .card-vegetables__title {
         font-size:2.4em;
