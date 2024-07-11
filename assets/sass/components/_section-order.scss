@@ -135,8 +135,16 @@
       height: 152px;
     }
 
+    @media screen and (max-width: 575px){
+      top: 3vh;
+    }
+
     @media screen and (max-width: 375px){
       height: 139px;
+    }
+
+    @media screen and (max-width: 320px){
+      height: 119px;
     }
 
     .wrapper__ribbon.wrapper__ribbon_back {
@@ -162,16 +170,25 @@
       }
 
       @media screen and (max-width: 672px){
-        height: 64px;
-        width: 100%;
-        max-width: 797px;
-        top: 8%;
+        line-height: 53px;
+        max-width: 100%;
+      }
+
+      @media screen and (max-width: 575px){
+        line-height: 53px;
+        max-width: 100%;
       }
   
       @media screen and (max-width: 375px){
-        line-height: 53px;
+        line-height: 33px;
         max-width: 400px;
         width: 100%;
+      }
+
+      @media screen and (max-width: 320px){
+        line-height: 53px;
+        max-width: 400px;
+        width: 80%;
       }
 
       p {
@@ -194,7 +211,9 @@
         }
     
         @media screen and (max-width: 375px){
-
+          font-size: 2.4em;
+          line-height: 64px;
+          letter-spacing: -0.02em;
         }
       }
     }
@@ -215,17 +234,28 @@
       @media screen and (max-width: 768px){
         height: 64px;
         max-width: 797px;
+        width: 100%;
         top: 45%;
       }
 
       @media screen and (max-width: 672px){
-        // max-width: 693px;
-        // left: 0%;
+        max-width: 112%;
+      }
+
+      @media screen and (max-width: 575px){
+        max-width: 100%;
+        left: 0;
       }
 
       @media screen and (max-width: 375px){
         line-height: 53px;
         max-width: 400px;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 342px){
+        width: 100%;
+        left: 0;
       }
 
       p {
@@ -246,7 +276,9 @@
         }
     
         @media screen and (max-width: 375px){
-
+          font-size: 2.4em;
+          line-height: 64px;
+          letter-spacing: -0.02em;
         }
       }
     }
