@@ -17,6 +17,10 @@
         flex-direction: column;
         padding-top: 66px;
     }
+
+    @media screen and (max-width: 500px) {
+        padding-top: 48px;
+    }
 }
 
 
@@ -29,6 +33,10 @@
     @media screen and (max-width: 768px) {
         height: 54px;
     }
+
+    @media screen and (max-width: 500px) {
+        height: 44px;
+    }
 }
 
 .section-hero__img-reviews {
@@ -37,6 +45,10 @@
 
     @media screen and (max-width: 768px) {
         height: 54px;
+    }
+
+    @media screen and (max-width: 500px) {
+        height: 44px;
     }
 }
 
@@ -51,6 +63,10 @@
     @media screen and (max-width: 768px) {
         left: 34px;
     }
+
+    @media screen and (max-width: 500px) {
+        left: 28px;
+    }
 }
 .section-hero__img-reviews_position-3 {
     position: absolute;
@@ -59,6 +75,10 @@
 
     @media screen and (max-width: 768px) {
         left: 69px;
+    }
+
+    @media screen and (max-width: 500px) {
+        left: 57px;
     }
 }
 
@@ -80,6 +100,12 @@
         height: 54px;
         left: 104px;
     }
+
+    @media screen and (max-width: 500px) {
+        width: 44px;
+        height: 44px;
+        left: 85px;
+    }
 }
 
 .section-hero__span-reviews_cap {
@@ -93,6 +119,10 @@
         font-size: 1.8em;
         line-height: 20px;
     }
+
+    @media screen and (max-width: 500px) {
+        font-size: 1.4em;
+    }
 }
 
 .section-hero__span-reviews_lowercase {
@@ -100,6 +130,10 @@
 
     @media screen and (max-width: 768px) {
         font-size: 1em;
+    }
+
+    @media screen and (max-width: 500px) {
+        font-size: 0.8em;
     }
 }
 
@@ -119,6 +153,10 @@
     margin-bottom: 32px;
     font-size: 1.4em;
     color: $white;
+
+    @media screen and (max-width: 500px) {
+        margin-bottom: 20px;
+    }
 }
 
 .section-hero__button {
@@ -148,6 +186,13 @@
         width: 114px;
         height: 114px;
     }
+
+    @media screen and (max-width: 500px) {
+        width: 68px;
+        height: 68px;
+        font-size: 1.4em;
+        line-height: 16px;
+    }
 }
 
 .section-hero__image {
@@ -163,6 +208,11 @@
         align-self: center;
         width: 488px;
     }
+
+    @media screen and (max-width: 500px) {
+        width: 303px;
+        height: 246px;
+    }
 }
 
 .section-hero__box-hashtag {
@@ -172,6 +222,10 @@
     grid-template-columns: repeat(2, minmax(min-content, max-content));
     justify-content: end;
     gap: 8px;
+
+    @media screen and (max-width: 500px) {
+        gap: 4px;
+    }
 }
 
 .section-hero__hashtag {
@@ -193,5 +247,10 @@
 
     @media screen and (max-width: 768px) {
         padding: 10px 20px 10px 20px;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 8px 14px 8px 14px;
+        font-size: 1em;
     }
 }
