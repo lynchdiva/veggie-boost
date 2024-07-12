@@ -22,7 +22,14 @@
     margin-top: 100px;
 
     @media screen and (max-width: 903px) {
+      max-width: 524px;
       margin-top: 0;
+    }
+
+    @media screen and (max-width: 375px) {
+      max-width: 320px;
+
+      letter-spacing: -0.96px;
     }
   }
 
@@ -56,11 +63,11 @@
       margin: auto;
     }
 
-    .section-contact__label {
+    .section-contact__wrapper {
       display: flex;
       position: relative;
       align-items: center;
-      width: 355px;
+      width: 350px;
       height: 48px;
 
       border-radius: 100px;
@@ -70,20 +77,35 @@
         width: 100%;
       }
 
-      .section-contact__input {
-        width: 90%;
+      .section-contact__label {
+        width: 100%;
         height: 100%;
-        padding-left: 20px;
 
-        font-size: 1.4em;
-        line-height: 18px;
-        letter-spacing: -0.56px;
-        color: $grey-input;
+        .section-contact__input {
+          width: 100%;
+          height: 100%;
+          padding-left: 20px;
 
-        border-radius: 100px;
-        border: none;
+          font-size: 1.4em;
+          line-height: 18px;
+          letter-spacing: -0.56px;
+          color: $grey-input;
 
-        opacity: 0.3;
+          border-radius: 100px;
+          border: none;
+
+          opacity: 0.3;
+        }
+
+        .section-contact__input:focus {
+          outline-style: solid;
+          outline-width: 2px;
+          outline-color: $orange;
+
+          color: $dark;
+
+          opacity: 0.6;
+        }
       }
 
       .section-contact__button {
@@ -151,11 +173,19 @@
     }
 
     @media screen and (max-width: 375px) {
+      height: 388px;
+    }
+
+    @media screen and (max-width: 360px) {
+      height: 370px;
+    }
+
+    @media screen and (max-width: 340px) {
       height: 350px;
     }
 
-    @media screen and (max-width: 345px) {
-      height: 300px;
+    @media screen and (max-width: 340px) {
+      height: 325px;
     }
 
     .section-contact__img {
