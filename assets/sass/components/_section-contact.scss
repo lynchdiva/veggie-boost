@@ -135,6 +135,7 @@
 
 .section-contact__container {
   display: flex;
+  width: 555px;
   margin-left: auto;
   padding-left: 30px;
 
@@ -151,6 +152,7 @@
   .section-contact__background {
     display: flex;
     align-items: flex-end;
+    width: 100%;
     max-width: 525px;
     min-width: 400px;
     height: 536px;
