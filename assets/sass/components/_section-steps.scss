@@ -121,6 +121,10 @@
   letter-spacing: -0.04em;
 }
 
+.section-steps__item:nth-child(2) {
+  max-width: 220px;
+}
+
 .section-steps__item::before {
   display: inline-flex;
   justify-content: center;
