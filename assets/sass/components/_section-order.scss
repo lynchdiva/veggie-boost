@@ -1,3 +1,7 @@
+// * {
+//   outline: deeppink 1px solid;
+// } 
+
 .section-order {
   @extend %container;
   
@@ -34,8 +38,23 @@
     }
   }
   
-  title.section-order__title {
+  .title.section-order__title {
     grid-column: 1;
+
+    @media screen and (max-width: 768px) {
+      font-size: 4em;
+      line-height: 110%;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 375px) {
+      font-size: 2.8em;
+      line-height: 114%;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      width: 90%;
+    }
   }
 
   .section-order__img {
@@ -87,14 +106,13 @@
     }
   }
 
-  .wrapper {
-    @extend %container;
-
+  .section-order__wrapper {
     position: relative;
     margin: 124px 0 124px 0;
     overflow: hidden;
     width: 100%;
     height: 223px;
+    padding: 0 -32px;
 
     @media screen and (max-width: 1024px){
       height: 179px;
@@ -117,18 +135,18 @@
       height: 119px;
     }
 
-    .wrapper__ribbon.wrapper__ribbon_back {
+    .section-order__wrapper-ribbon.section-order__wrapper-ribbon_back {
       background-color: $orange;
       line-height: 100px;
       transform: rotate(2deg);
       position: absolute;
-      top: 35px;
+      top: 37px;
       left: -56px;
 
       @media screen and (max-width: 1024px){
         height: 64px;
         width: 100%;
-        top: 8%;
+        top: 11%;
         left: 0%;
       }
 
@@ -136,7 +154,7 @@
         height: 64px;
         width: 101%;
         max-width: 797px;
-        top: 8%;
+        top: 11%;
         left: -1%;
       }
 
@@ -192,7 +210,7 @@
       }
     }
     
-    .wrapper__ribbon {
+    .section-order__wrapper-ribbon {
       background-color: $green;
       line-height: 100px;
       transform: rotate(-3deg);
@@ -202,14 +220,14 @@
 
       @media screen and (max-width: 1024px){
         height: 64px;
-        top: 45%;
+        top: 43%;
       }
 
       @media screen and (max-width: 768px){
         height: 64px;
         max-width: 797px;
         width: 110%;
-        top: 45%;
+        top: 43%;
       }
 
       @media screen and (max-width: 672px){
@@ -251,7 +269,11 @@
           line-height: 64px;
           letter-spacing: -0.02em;
         }
-    
+
+        @media screen and (max-width: 507px){
+
+        }
+
         @media screen and (max-width: 375px){
           font-size: 2.4em;
           line-height: 64px;
