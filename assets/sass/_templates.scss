@@ -39,6 +39,10 @@ a {
   color: $white;
   text-transform: uppercase;
 
+  @media screen and (max-width: 1024px) {
+    line-height: 70px;
+  }
+
   @media screen and (max-width: 768px) {
     font-size: 5.4em;
     line-height: 64px;

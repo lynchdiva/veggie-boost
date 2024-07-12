@@ -19,6 +19,7 @@
     align-self: center;
     max-width: 437px;
     width: 100%;
+    letter-spacing: -0.04em;
 }
 .section-shipping__subtitle_color {
     color: $green;
@@ -42,11 +43,15 @@
     .section-shipping {
         margin-bottom: 100px;
     }
+    .section-shipping__subtitle {
+        max-width: 544px;
+    }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 512px) {
     .section-shipping {
         padding: 80px 20px;
+        border-radius: 40px;
     }
 }
 
