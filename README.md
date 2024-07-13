@@ -29,4 +29,13 @@ Veggieboost implemented on Sass preprocessor. In the project were used the follo
 
 This website is displayed correctly at all resolutions from 320px to 2560px and higher. For resolutions less than 680px, a hamburger menu has been implemented on pure CSS.
 
-![Demo GIF](./readme-assets/recording-menu.gif)
+<div align="center">
+<img src="./readme-assets/start.png">
+<img src="./readme-assets/Menu.png">
+</div>
+
+The project has animation for hovering the cursor over buttons and product cards. And it also has navigation through page sections.
+
+## Future scope
+
+- Add Pop-up element
