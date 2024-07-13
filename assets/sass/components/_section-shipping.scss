@@ -1,62 +1,68 @@
 .section-shipping {
-    display: flex;
-    justify-content:space-between;
-    max-width: 1216px;
-    width: 100%;
-    padding: 63px 64px;
-    margin-bottom: 124px;
-    gap: 40px;
-    border-radius: 80px;
-    background-image: url(../images/section-shipping__img_background.png);
-    background-size: cover;
-    background-color: #FAF3E7;
+  @extend %container;
+
+  margin-top: $global-margin-desktop;
 }
+
+.section-shipping__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1216px;
+  width: 100%;
+  padding: 63px 64px;
+  gap: 40px;
+  border-radius: 80px;
+  background-image: url(../images/section-shipping__img_background.png);
+  background-size: cover;
+  background-color: #faf3e7;
+}
+
 .section-shipping__img {
-    max-width: 578px;
-    width: 100%;
+  max-width: 578px;
+  width: 100%;
 }
 .section-shipping__subtitle {
-    align-self: center;
-    max-width: 437px;
-    width: 100%;
-    letter-spacing: -0.04em;
+  align-self: center;
+  max-width: 437px;
+  width: 100%;
+  letter-spacing: -0.04em;
 }
 .section-shipping__subtitle_color {
-    color: $green;
+  color: $green;
 }
 .section-shipping__subtitle_color2 {
-    color: $orange;
+  color: $orange;
 }
 @media screen and (max-width: 1170px) {
-    .section-shipping {
-        justify-content: center;
-        flex-wrap: wrap;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    .section-shipping__subtitle {
-        max-width: 578px;
-        text-align: center;
-    }
-}  
+  .section-shipping__container {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .section-shipping__subtitle {
+    max-width: 578px;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 768px) {
-    .section-shipping {
-        margin-bottom: 100px;
-    }
-    .section-shipping__subtitle {
-        max-width: 544px;
-    }
+  .section-shipping {
+    margin-top: $global-margin-tablet;
+  }
+  .section-shipping__subtitle {
+    max-width: 544px;
+  }
 }
 
 @media screen and (max-width: 512px) {
-    .section-shipping {
-        padding: 80px 20px;
-        border-radius: 40px;
-    }
+  .section-shipping__container {
+    padding: 80px 20px;
+    border-radius: 40px;
+  }
 }
 
 @media screen and (max-width: 375px) {
-    .section-shipping {
-        margin-bottom: 80px;
-    }
+  .section-shipping {
+    margin-top: $global-margin-mobile;
+  }
 }

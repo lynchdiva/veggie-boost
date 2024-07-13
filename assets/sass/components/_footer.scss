@@ -1,15 +1,24 @@
 .footer {
   background-color: $light-green;
+
+  margin-top: $global-margin-desktop;
+
+  @media screen and (max-width: 768px) {
+    margin-top: $global-margin-tablet;
+  }
+
+  @media screen and (max-width: 375px) {
+    margin: $global-margin-mobile auto 0;
+  }
 }
 
-.footer__container{
+.footer__container {
   @extend %container;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 377px;
-  margin-top: 10%;
 
   @media screen and (max-width: 768px) {
     display: grid;
@@ -19,20 +28,24 @@
   }
 
   @media screen and (max-width: 680px) {
-  grid-template-rows: 2fr 1fr 2fr;
-  grid-template-columns: 1fr;
-  height: 640px;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-columns: 1fr;
+    height: 640px;
+  }
+
+  @media screen and (max-width: 375px) {
+    justify-content: center;
   }
 }
 
 .footer__left-element {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -42,14 +55,21 @@
 
   @media screen and (max-width: 680px) {
     justify-content: center;
+  }
+
+  .footer__img {
+    @media screen and (max-width: 375px) {
+      max-width: 290px;
+      height: 152px;
     }
+  }
 }
 
 .footer__menu {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -61,25 +81,25 @@
 
   @media screen and (max-width: 680px) {
     position: static;
-    justify-content: center
-    }
+    justify-content: center;
+  }
 }
 
 address {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   font-style: normal;
 
-font-family: 'DM Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-letter-spacing: -0.02em;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     display: grid;
     grid-column-start: 2;
     grid-column-end: 2;
@@ -88,17 +108,17 @@ letter-spacing: -0.02em;
     justify-items: center;
   }
 }
-.footer__right-element{
-  @media screen and (max-width: 768px){
+.footer__right-element {
+  @media screen and (max-width: 768px) {
     display: grid;
   }
 
   @media screen and (max-width: 680px) {
     justify-content: center;
-font-size: 14px;
-line-height: 18px;
-text-align: center;
-}
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
 }
 
 address > img {

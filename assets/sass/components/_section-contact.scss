@@ -3,9 +3,19 @@
 
   display: flex;
 
+  margin-top: $global-margin-desktop;
+
   @media screen and (max-width: 903px) {
     flex-direction: column;
     align-items: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: $global-margin-tablet;
+  }
+
+  @media screen and (max-width: 375px) {
+    margin-top: $global-margin-mobile;
   }
 }
 

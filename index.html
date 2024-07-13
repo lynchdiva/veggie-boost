@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
   <body>
-    <!-- ХЕДЕР Зина -->
     <header class="header">
       <div class="header__left-element">
         <nav>
           <ul class="nav-items nav-items_tablet">
-            <li><a class="nav-items__link" href="#">How It Works</a></li>
-            <li><a class="nav-items__link" href="#">Vegetables</a></li>
-            <li><a class="nav-items__link" href="#">Contacts</a></li>
+            <li><a class="nav-items__link" href="#works">How It Works</a></li>
+            <li>
+              <a class="nav-items__link" href="#vegetables">Vegetables</a>
+            </li>
+            <li><a class="nav-items__link" href="#contacts">Contacts</a></li>
           </ul>
         </nav>
       </div>
@@ -67,11 +68,8 @@
         </ul>
       </div>
     </header>
-    <!-- КОНЕЦ ХЕДЕР Зина -->
 
     <main>
-      <!-- СЕКЦИЯ Лиза -->
-      <!--margin или padding заголовка можешь добавлять в уже созданный класс page-title, он в файле templates -->
       <section class="section-hero">
         <div class="section-hero__container">
           <div class="section-hero__box-reviews">
@@ -101,9 +99,9 @@
           </h1>
           <p class="section-hero__text">
             Our expertly curated vegetable baskets are made with the freshest,
-            highest quality vegetables available. Fresh Harvest Box has
-            got you covered. Fresh, high-quality vegetables in expertly
-            curated vegetable baskets delivered to you.
+            highest quality vegetables available. Fresh Harvest Box has got you
+            covered. Fresh, high-quality vegetables in expertly curated
+            vegetable baskets delivered to you.
           </p>
           <button class="section-hero__button">shop<br />now</button>
           <img
@@ -119,12 +117,8 @@
           </div>
         </div>
       </section>
-      <!-- КОНЕЦ СЕКЦИИ ЛИЗА -->
 
-      <section class="section-order">
-        <!-- БЛОКИ КСЮША-->
-        <!-- для удобства разработки твои блоки идут друг за другом, позже вставим между ними секцию -->
-        <!-- margin или padding заголовка пиши в классе section-order__title, добавь этот класс в свой компонент-->
+      <section class="section-order" id="works">
         <div class="section-order__container">
           <h2 class="title section-order__title">
             To order your vegetable basket, simply follow these easy steps
@@ -146,54 +140,31 @@
             </p>
           </div>
         </div>
-        <!-- КОНЕЦ БЛОКИ КСЮША -->
 
-        <!-- СЕКЦИЯ Расалила (для блока с перечислением лучше использовать тег ul, кружочки можно сделать тегом span)-->
-        <!-- margin или padding заголовка пиши в классе section-steps__subtitle, добавь этот класс в свой компонент-->
-        <!-- <section class="section-steps">
-          <div class="setion-steps__inner">
+        <section class="section-steps">
+          <div class="section-steps__container">
+            <span class="section-steps__img"></span>
             <div class="section-steps__content">
               <h3 class="subtitle section-steps__subtitle">
-                3 Easy Steps for Buying Fresh Vegetables
+                3 EASY STEPS FOR BUYING FRESH VEGETABLES
               </h3>
-              <div class="section-steps__list">
-                <ul class="section-steps__item">
-                  <li>Just choose the vegetable you want to order by clicking on the checkboxes next to it.</li>
-                  <li>Click on the basket and fill out the form.</li>
-                  <li>Sit back and relax! Your fresh vegetables basket will be delivered.</li>
-                </ul>
-              </div>
+              <ol class="section-steps__items">
+                <li class="section-steps__item">
+                  Just choose the vegetable you want to order by clicking on the
+                  checkboxes next to it.
+                </li>
+                <li class="section-steps__item">
+                  Click on the basket and fill out the form.
+                </li>
+                <li class="section-steps__item">
+                  Sit back and relax! Your fresh vegetables basket will be
+                  delivered.
+                </li>
+              </ol>
             </div>
-            <img src="./assets/images/section-steps img girl.png" alt="img girl" class="section-steps__img">
-          </div>
-        </section> -->
-        <!-- КОНЕЦ СЕКЦИЯ Tomara -->
-        <!-- СЕКЦИЯ Tomara (для блока с перечислением лучше использовать тег ul, кружочки можно сделать тегом span)-->
-        <!-- margin или padding заголовка пиши в классе section-steps__subtitle, добавь этот класс в свой компонент-->
-        <section class="section-steps">
-            <span class="section-steps__img"></span>
-          <div class="section-steps__content">
-            <h3 class="subtitle section-steps__subtitle">
-              3 EASY STEPS FOR BUYING FRESH VEGETABLES
-            </h3>
-            <ol class="section-steps__items">
-              <li class="section-steps__item">
-                Just choose the vegetable you want to order by clicking on the
-                checkboxes next to it.
-              </li>
-              <li class="section-steps__item">
-                Click on the basket and fill out the form.
-              </li>
-              <li class="section-steps__item">
-                Sit back and relax! Your fresh vegetables basket will be
-                delivered.
-              </li>
-            </ol>
           </div>
         </section>
-        <!-- КОНЕЦ СЕКЦИЯ Tomara -->
 
-        <!-- БЛОК КСЮША-->
         <div class="section-order__wrapper">
           <div
             class="section-order__wrapper-ribbon section-order__wrapper-ribbon_back"
@@ -212,170 +183,165 @@
             </p>
           </div>
         </div>
-        <!-- КОНЕЦ БЛОК КСЮША -->
 
-        <!-- СЕКЦИЯ Tomara -->
-        <!-- margin или padding заголовка пиши в классе section-vegetables__subtitle, добавь этот класс в свой компонент-->
-        <section class="section-vegetables">
-          <h3 class="subtitle section-vegetables__subtitle">
-            ORGANIC VEGETABLES
-          </h3>
-          <p class="section-vegetables__text">
-            Our organic vegetables are hand-picked from local farms and
-            delivered straight to your doorstep, ensuring that you get the
-            freshest and most nutritious produce possible.
-          </p>
-          <div class="section-vegetables__cards">
-            <div class="card-vegetables">
-              <p class="card-vegetables__title">Carrot</p>
-              <p class="card-vegetables__species">Plant</p>
-              <div class="card-vegetables__img_area">
-                <img
-                  src="./assets/images/card__img_carrot.png"
-                  class="card-vegetables__img_carrot"
-                  alt="carrot"
-                />
-                <span class="card-vegetables__shadow"></span>
+        <section class="section-vegetables" id="vegetables">
+          <div class="section-vegetables__container">
+            <h3 class="subtitle section-vegetables__subtitle">
+              ORGANIC VEGETABLES
+            </h3>
+            <p class="section-vegetables__text">
+              Our organic vegetables are hand-picked from local farms and
+              delivered straight to your doorstep, ensuring that you get the
+              freshest and most nutritious produce possible.
+            </p>
+            <div class="section-vegetables__cards">
+              <div class="card-vegetables">
+                <p class="card-vegetables__title">Carrot</p>
+                <p class="card-vegetables__species">Plant</p>
+                <div class="card-vegetables__img_area">
+                  <img
+                    src="./assets/images/card__img_carrot.png"
+                    class="card-vegetables__img_carrot"
+                    alt="carrot"
+                  />
+                  <span class="card-vegetables__shadow"></span>
+                </div>
+                <p class="card-vegetables__weight">100 UAH / kg</p>
               </div>
-              <p class="card-vegetables__weight">100 UAH / kg</p>
-            </div>
-            <div class="card-vegetables">
-              <p class="card-vegetables__title">Brussel sprouts</p>
-              <p class="card-vegetables__species">Plant</p>
-              <div class="card-vegetables__img_area">
-                <img
-                  src="./assets/images/card__img__brussel_sprouts.png"
-                  class="card-vegetables__img_sprouts"
-                  alt="brussel sprouts"
-                />
-                <span class="card-vegetables__shadow"></span>
+              <div class="card-vegetables">
+                <p class="card-vegetables__title">Brussel sprouts</p>
+                <p class="card-vegetables__species">Plant</p>
+                <div class="card-vegetables__img_area">
+                  <img
+                    src="./assets/images/card__img__brussel_sprouts.png"
+                    class="card-vegetables__img_sprouts"
+                    alt="brussel sprouts"
+                  />
+                  <span class="card-vegetables__shadow"></span>
+                </div>
+                <p class="card-vegetables__weight">80 UAH / kg</p>
               </div>
-              <p class="card-vegetables__weight">80 UAH / kg</p>
-            </div>
-            <div class="card-vegetables">
-              <p class="card-vegetables__title">Tomato</p>
-              <p class="card-vegetables__species">Plant</p>
-              <div class="card-vegetables__img_area">
-                <img
-                  src="./assets/images/card__img__tomato.png"
-                  class="card-vegetables__img_tomato"
-                  alt="tomato"
-                />
-                <span class="card-vegetables__shadow"></span>
+              <div class="card-vegetables">
+                <p class="card-vegetables__title">Tomato</p>
+                <p class="card-vegetables__species">Plant</p>
+                <div class="card-vegetables__img_area">
+                  <img
+                    src="./assets/images/card__img__tomato.png"
+                    class="card-vegetables__img_tomato"
+                    alt="tomato"
+                  />
+                  <span class="card-vegetables__shadow"></span>
+                </div>
+                <p class="card-vegetables__weight">40 UAH / kg</p>
               </div>
-              <p class="card-vegetables__weight">40 UAH / kg</p>
-            </div>
-            <div class="card-vegetables">
-              <p class="card-vegetables__title">Eggplant</p>
-              <p class="card-vegetables__species">Plant</p>
-              <div class="card-vegetables__img_area">
-                <img
-                  src="./assets/images/card__img__eggplant.png"
-                  class="card-vegetables__img_eggplant"
-                  alt="eggplant"
-                />
-                <span class="card-vegetables__shadow"></span>
+              <div class="card-vegetables">
+                <p class="card-vegetables__title">Eggplant</p>
+                <p class="card-vegetables__species">Plant</p>
+                <div class="card-vegetables__img_area">
+                  <img
+                    src="./assets/images/card__img__eggplant.png"
+                    class="card-vegetables__img_eggplant"
+                    alt="eggplant"
+                  />
+                  <span class="card-vegetables__shadow"></span>
+                </div>
+                <p class="card-vegetables__weight">60 UAH / kg</p>
               </div>
-              <p class="card-vegetables__weight">60 UAH / kg</p>
-            </div>
-            <div class="card-vegetables">
-              <p class="card-vegetables__title">Sweet potatoes</p>
-              <p class="card-vegetables__species">Plant</p>
-              <div class="card-vegetables__img_area">
-                <img
-                  src="./assets/images/card__img__potatoes.png"
-                  class="card-vegetables__img_potatoes"
-                  alt="potatoes"
-                />
-                <span class="card-vegetables__shadow"></span>
+              <div class="card-vegetables">
+                <p class="card-vegetables__title">Sweet potatoes</p>
+                <p class="card-vegetables__species">Plant</p>
+                <div class="card-vegetables__img_area">
+                  <img
+                    src="./assets/images/card__img__potatoes.png"
+                    class="card-vegetables__img_potatoes"
+                    alt="potatoes"
+                  />
+                  <span class="card-vegetables__shadow"></span>
+                </div>
+                <p class="card-vegetables__weight">80 UAH / kg</p>
               </div>
-              <p class="card-vegetables__weight">80 UAH / kg</p>
-            </div>
-            <div class="card-vegetables">
-              <p class="card-vegetables__title">Leek</p>
-              <p class="card-vegetables__species">Plant</p>
-              <div class="card-vegetables__img_area">
-                <img
-                  src="./assets/images/card__img__leek.png"
-                  class="card-vegetables__img_leek"
-                  alt="leek"
-                />
-                <span class="card-vegetables__shadow"></span>
+              <div class="card-vegetables">
+                <p class="card-vegetables__title">Leek</p>
+                <p class="card-vegetables__species">Plant</p>
+                <div class="card-vegetables__img_area">
+                  <img
+                    src="./assets/images/card__img__leek.png"
+                    class="card-vegetables__img_leek"
+                    alt="leek"
+                  />
+                  <span class="card-vegetables__shadow"></span>
+                </div>
+                <p class="card-vegetables__weight">50 UAH / kg</p>
               </div>
-              <p class="card-vegetables__weight">50 UAH / kg</p>
-            </div>
-            <div class="card-vegetables">
-              <p class="card-vegetables__title">Mushrooms</p>
-              <p class="card-vegetables__species">Plant</p>
-              <div class="card-vegetables__img_area">
-                <img
-                  src="./assets/images/card__img__mushrooms.png"
-                  class="card-vegetables__img_mushrooms"
-                  alt="mushrooms"
-                />
-                <span class="card-vegetables__shadow"></span>
+              <div class="card-vegetables">
+                <p class="card-vegetables__title">Mushrooms</p>
+                <p class="card-vegetables__species">Plant</p>
+                <div class="card-vegetables__img_area">
+                  <img
+                    src="./assets/images/card__img__mushrooms.png"
+                    class="card-vegetables__img_mushrooms"
+                    alt="mushrooms"
+                  />
+                  <span class="card-vegetables__shadow"></span>
+                </div>
+                <p class="card-vegetables__weight">40 UAH / kg</p>
               </div>
-              <p class="card-vegetables__weight">40 UAH / kg</p>
-            </div>
-            <div class="card-vegetables">
-              <p class="card-vegetables__title">Corn</p>
-              <p class="card-vegetables__species">Plant</p>
-              <div class="card-vegetables__img_area">
-                <img
-                  src="./assets/images/card__img__corn.png"
-                  class="card-vegetables__img_corn"
-                  alt="corn"
-                />
-                <span class="card-vegetables__shadow"></span>
+              <div class="card-vegetables">
+                <p class="card-vegetables__title">Corn</p>
+                <p class="card-vegetables__species">Plant</p>
+                <div class="card-vegetables__img_area">
+                  <img
+                    src="./assets/images/card__img__corn.png"
+                    class="card-vegetables__img_corn"
+                    alt="corn"
+                  />
+                  <span class="card-vegetables__shadow"></span>
+                </div>
+                <p class="card-vegetables__weight">60 UAH / kg</p>
               </div>
-              <p class="card-vegetables__weight">60 UAH / kg</p>
-            </div>
-            <div class="card-vegetables">
-              <p class="card-vegetables__title">Radish</p>
-              <p class="card-vegetables__species">Plant</p>
-              <div class="card-vegetables__img_area">
-                <img
-                  src="./assets/images/card__img__radish.png"
-                  class="card-vegetables__img_radish"
-                  alt="radish"
-                />
-                <span class="card-vegetables__shadow"></span>
+              <div class="card-vegetables">
+                <p class="card-vegetables__title">Radish</p>
+                <p class="card-vegetables__species">Plant</p>
+                <div class="card-vegetables__img_area">
+                  <img
+                    src="./assets/images/card__img__radish.png"
+                    class="card-vegetables__img_radish"
+                    alt="radish"
+                  />
+                  <span class="card-vegetables__shadow"></span>
+                </div>
+                <p class="card-vegetables__weight">90 UAH / kg</p>
               </div>
-              <p class="card-vegetables__weight">90 UAH / kg</p>
             </div>
+            <button class="section-vegetables__button">
+              <img
+                class="section-vegetables__button_img"
+                src="./assets/icons/section-vegetables__button__img.svg"
+                alt=""
+              />
+              <span class="section-vegetables__button_name">ORDER</span>
+            </button>
           </div>
-          <button class="section-vegetables__button">
+        </section>
+
+        <section class="section-shipping">
+          <div class="section-shipping__container">
             <img
-              class="section-vegetables__button_img"
-              src="./assets/icons/section-vegetables__button__img.svg"
+              src="./assets/images/section-shipping__img.svg"
+              class="section-shipping__img"
               alt=""
             />
-            <span class="section-vegetables__button_name">ORDER</span>
-          </button>
+            <h3 class="subtitle section-shipping__subtitle">
+              THE BEST SHIPPING FOR YOU!
+              <i class="section-shipping__subtitle_color">YOUR PRODUCTS </i>
+              ALWAYS ARRIVE IN THE
+              <i class="section-shipping__subtitle_color2">BEST </i> CONDITIONS!
+            </h3>
+          </div>
         </section>
-        <!-- КОНЕЦ СЕКЦИЯ Tomara -->
-
-        <!-- СЕКЦИЯ Tomara -->
-        <!-- margin или padding заголовка пиши в классе section-shipping__subtitle, добавь этот класс в свой компонент-->
-        <section class="section-shipping">
-          <img
-            src="./assets/images/section-shipping__img.svg"
-            class="section-shipping__img"
-            alt=""
-          />
-          <h3 class="subtitle section-shipping__subtitle">
-            THE BEST SHIPPING FOR YOU!
-            <i class="section-shipping__subtitle_color">YOUR PRODUCTS </i>
-            ALWAYS ARRIVE IN THE
-            <i class="section-shipping__subtitle_color2">BEST </i> CONDITIONS!
-          </h3>
-        </section>
-        <!-- КОНЕЦ СЕКЦИЯ Tomara -->
       </section>
 
-      <!-- СЕКЦИЯ Зина -->
-      <!-- margin или padding заголовка пиши в классе section-contact__title, добавь этот класс в свой компонент-->
-      <section class="section-contact">
+      <section class="section-contact" id="contacts">
         <div class="section-contact__contacts">
           <h2 class="title section-contact__title">
             Fresh Harvest Box has got you covered
@@ -414,49 +380,51 @@
           </div>
         </div>
       </section>
-      <!-- КОНЕЦ СЕКЦИЯ Зина -->
     </main>
 
-    <!-- ФУТЕР Дарка -->
     <footer class="footer">
       <div class="footer__container">
-      <!-- для блока с иконками соц.сетей, адреса и телефона лучше использовать семантический тег address-->
-      <div class="footer__left-element">
-        <img src="./assets/images/footer-img-vegetables.svg" alt="broccoli" />
-        <div class="logo">
-          <svg class="logo__icon logo__icon_black">
-            <use xlink:href="assets/icons/sprite.svg#logo"></use>
-          </svg>
-          veggieboost
+        <div class="footer__left-element">
+          <img
+            class="footer__img"
+            src="./assets/images/footer-img-vegetables.svg"
+            alt="broccoli"
+          />
+          <div class="logo">
+            <svg class="logo__icon">
+              <use xlink:href="assets/icons/sprite.svg#logo"></use>
+            </svg>
+            veggieboost
+          </div>
+        </div>
+
+        <div class="footer__menu">
+          <nav>
+            <ul class="nav-items nav-items_tablet">
+              <li><a class="nav-items__link" href="#works">How It Works</a></li>
+              <li>
+                <a class="nav-items__link" href="#vegetables">Vegetables</a>
+              </li>
+              <li><a class="nav-items__link" href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__right-element">
+          <address>
+            <img
+              src="./assets/images/footer-social-media-icon3.svg"
+              alt="youtube"
+            />
+            <p>+380 (68) 443-94-26</p>
+            <p>
+              1678 S. Pioneer Road <br />
+              Salt Lake City <br />
+              UT 84104
+            </p>
+          </address>
         </div>
       </div>
-
-      <div class="footer__menu">
-        <nav>
-          <ul class="nav-items nav-items_tablet">
-            <li><a class="nav-items__link" href="#">How It Works</a></li>
-            <li><a class="nav-items__link" href="#">Vegetables</a></li>
-            <li><a class="nav-items__link" href="#">Contacts</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="footer__right-element">
-        <address>
-          <img
-            src="./assets/images/footer-social-media-icon3.svg"
-            alt="youtube"
-          />
-          <p>+380 (68) 443-94-26</p>
-          <p>
-            1678 S. Pioneer Road <br />
-            Salt Lake City <br />
-            UT 84104
-          </p>
-        </address>
-      </div>
-    </div>
     </footer>
-    <!-- КОНЕЦ ФУТЕР Дарка -->
   </body>
 </html>
