@@ -34,7 +34,9 @@ This website is displayed correctly at all resolutions _from 320px to 2560px and
 <img src="./readme-assets/menu.png">
 </div>
 
-The project has animation for hovering the cursor over buttons and product cards. And it also has navigation through page sections.
+The project has animation for hovering the cursor over buttons and product cards.
+
+Also it has working navigation through page sections.
 
 ## Future scope
 
