@@ -11,7 +11,7 @@
 ---
 
 <div align="center">
-<img src="https://github.com/lynchdiva/veggie-boost/readme-assetsveggieboost.jpeg">
+<img src="./readme-assets/veggieboost.jpeg">
 </div>
 
 ## Description
@@ -29,4 +29,4 @@ Veggieboost implemented on Sass preprocessor. In the project were used the follo
 
 This website is displayed correctly at all resolutions from 320px to 2560px and higher. For resolutions less than 680px, a hamburger menu has been implemented on pure CSS.
 
-![Demo GIF](https://github.com/lynchdiva/veggie-boost/readme-assets/recording-menu.gif)
+![Demo GIF](./readme-assets/recording-menu.gif)
