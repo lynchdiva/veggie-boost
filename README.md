@@ -2,13 +2,13 @@
 <h1>Sass "VEGGIEBOOST"</h1>
 </div>
 
----
-
 <div align="center">
 <img alt="Static Badge" src="https://img.shields.io/badge/made%20by-%23itgirlsschool-violet">
 <img alt="Static Badge" src="https://img.shields.io/badge/Dart%20Sass-1.77.8-green">
 <img alt="Static Badge" src="https://img.shields.io/badge/SCSS-70.8%25-blue">
 </div>
+
+---
 
 <div align="center">
 <img src="./readme-assets/veggieboost.jpeg">
