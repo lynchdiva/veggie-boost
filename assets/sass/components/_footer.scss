@@ -1,7 +1,3 @@
-// *{
-//   border: 1px solid violet
-// }
-
 .footer {
   @extend %container;
 
@@ -9,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   height: 377px;
+  margin-top: 10%;
 
   background-color: $light-green;
   @media screen and (max-width: 768px) {
