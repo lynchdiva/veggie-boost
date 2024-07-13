@@ -2,13 +2,13 @@
 <h1>Sass "VEGGIEBOOST"</h1>
 </div>
 
+---
+
 <div align="center">
 <img alt="Static Badge" src="https://img.shields.io/badge/made%20by-%23itgirlsschool-violet">
 <img alt="Static Badge" src="https://img.shields.io/badge/Dart%20Sass-1.77.8-green">
 <img alt="Static Badge" src="https://img.shields.io/badge/SCSS-70.8%25-blue">
 </div>
-
----
 
 <div align="center">
 <img src="./readme-assets/veggieboost.jpeg">
@@ -16,7 +16,7 @@
 
 ## Description
 
-A responsive and adaptive landing page for the food retail industry.
+**A responsive and adaptive** landing page for the food retail industry.
 
 This is an educational project made by students of the #itgirlsschool.
 
@@ -27,7 +27,7 @@ Veggieboost implemented on Sass preprocessor. In the project were used the follo
 - Flexbox
 - CSS Grid Layout
 
-This website is displayed correctly at all resolutions from 320px to 2560px and higher. For resolutions less than 680px, a hamburger menu has been implemented on pure CSS.
+This website is displayed correctly at all resolutions _from 320px to 2560px and higher._ For resolutions less than 680px, a hamburger menu has been implemented on pure CSS.
 
 <div align="center">
 <img src="./readme-assets/start.png">
