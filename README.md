@@ -31,7 +31,7 @@ This website is displayed correctly at all resolutions _from 320px to 2560px and
 
 <div align="center">
 <img src="./readme-assets/start.png">
-<img src="./readme-assets/menu.png">
+<img src="./readme-assets/Menu.png">
 </div>
 
 The project has animation for hovering the cursor over buttons and product cards.
