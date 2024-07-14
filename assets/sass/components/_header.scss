@@ -161,7 +161,7 @@
 
     background-color: $green;
 
-    transition-duration: 0.4s;
+    transition-duration: 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
 
     @media screen and (max-width: 480px) {
       width: 100%;
