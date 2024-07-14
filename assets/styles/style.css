@@ -581,7 +581,7 @@ a {
   height: 2px;
   background-color: #77ac63;
   border-radius: 10px;
-  transition-duration: 0.25s;
+  transition-duration: 0.25s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 .header .hamburger-menu .hamburger-menu__btn span::before {
   content: "";
