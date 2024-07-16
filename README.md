@@ -20,7 +20,7 @@
 
 This is an educational project made by students of the #itgirlsschool.
 
-[Link](https://lynchdiva.github.io/veggie-boost/)
+[Go to link](https://lynchdiva.github.io/veggie-boost/)
 
 ## About the project
 
