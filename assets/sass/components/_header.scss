@@ -59,6 +59,10 @@
       width: 24px;
       height: 24px;
     }
+
+    .header__shopping-cart-icon:hover {
+      opacity: 0.5;
+    }
   }
 
   .hamburger-menu {
@@ -126,7 +130,7 @@
         background-color: $dark-green;
         border-radius: 10px;
 
-        transition-duration: 0.25s cubic-bezier(0.77, 0.2, 0.05, 1);
+        transition-duration: 0.25s;
       }
 
       span::before {
@@ -161,7 +165,7 @@
 
     background-color: $green;
 
-    transition-duration: 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition-duration: 0.3s;
 
     @media screen and (max-width: 480px) {
       width: 100%;

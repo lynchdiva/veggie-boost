@@ -20,6 +20,8 @@
 
 This is an educational project made by students of the #itgirlsschool.
 
+[Link](https://lynchdiva.github.io/veggie-boost/)
+
 ## About the project
 
 Veggieboost implemented on Sass preprocessor. In the project were used the following technologies:

@@ -10,6 +10,8 @@ html {
   height: 100%;
 
   font-size: 62.5%; //10px
+
+  scroll-behavior: smooth;
 }
 
 body {
@@ -103,6 +105,10 @@ a {
 
   .nav-items__link {
     font-size: 1.4em;
+  }
+
+  .nav-items__link:hover {
+    opacity: 0.6;
   }
 }
 //===============Конец Навигация==================//
