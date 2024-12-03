@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-<img alt="Static Badge" src="https://img.shields.io/badge/made%20by-%23itgirlsschool-violet">
+<img alt="Static Badge" src="https://img.shields.io/badge/made%20by-%23itgirlschool-violet">
 <img alt="Static Badge" src="https://img.shields.io/badge/Dart%20Sass-1.77.8-green">
 <img alt="Static Badge" src="https://img.shields.io/badge/SCSS-70.8%25-blue">
 </div>
@@ -18,7 +18,7 @@
 
 **A responsive and adaptive** landing page for the food retail industry.
 
-This is an educational project made by students of the #itgirlsschool.
+This is an educational project made by students of the #itgirlschool.
 
 [Go to link](https://lynchdiva.github.io/veggie-boost/)
 
