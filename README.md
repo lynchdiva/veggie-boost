@@ -11,7 +11,8 @@
 ---
 
 <div align="center">
-<img src="./readme-assets/veggieboost.jpeg">
+<img src="https://sun9-24.userapi.com/impg/Japs3ztRQVXkH_nw3oSZWVCfD3fgyv3R1A411A/VNQkkcxrXm4.jpg?size=2560x1280&quality=95&sign=45c44acdbdfbf8fdcf61b5deefd743d9&type=album">
+<img src="https://sun9-55.userapi.com/impg/kT0uTmAc1q0-grransGC_vtiJyTBYFc8SJ8JJQ/pbu6GWEoRPU.jpg?size=2560x1316&quality=95&sign=34ed6855e38a951cbdbce6ad5f3953bb&type=album">
 </div>
 
 ## Description
