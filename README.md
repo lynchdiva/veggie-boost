@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-<img alt="Static Badge" src="https://img.shields.io/badge/made%20by-%23itgirlschool-violet">
+<img alt="Static Badge" src="https://img.shields.io/badge/made%20by-%23itgirlsschool-violet">
 <img alt="Static Badge" src="https://img.shields.io/badge/Dart%20Sass-1.77.8-green">
 <img alt="Static Badge" src="https://img.shields.io/badge/SCSS-70.8%25-blue">
 </div>
@@ -11,15 +11,14 @@
 ---
 
 <div align="center">
-<img src="https://sun9-24.userapi.com/impg/Japs3ztRQVXkH_nw3oSZWVCfD3fgyv3R1A411A/VNQkkcxrXm4.jpg?size=2560x1280&quality=95&sign=45c44acdbdfbf8fdcf61b5deefd743d9&type=album">
-<img src="https://sun9-55.userapi.com/impg/kT0uTmAc1q0-grransGC_vtiJyTBYFc8SJ8JJQ/pbu6GWEoRPU.jpg?size=2560x1316&quality=95&sign=34ed6855e38a951cbdbce6ad5f3953bb&type=album">
+<img src="./readme-assets/veggieboost.jpeg">
 </div>
 
 ## Description
 
 **A responsive and adaptive** landing page for the food retail industry.
 
-This is an educational project made by students of the #itgirlschool.
+This is an educational project made by students of the #itgirlsschool.
 
 [Go to link](https://lynchdiva.github.io/veggie-boost/)
 
