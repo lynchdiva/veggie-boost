@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Sass "VEGGIEBOOST"</h1>
+<h1>VEGGIEBOOST</h1>
 </div>
 
 <div align="center">
